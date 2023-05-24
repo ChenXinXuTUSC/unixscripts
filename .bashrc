@@ -109,6 +109,10 @@ if [ -f ~/.bash_func ]; then
 	. ~/.bash_func
 fi
 
+if [ -f ~/.bash_export ]; then
+	. ~/.bash_export
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).

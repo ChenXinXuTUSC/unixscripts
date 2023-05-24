@@ -1,0 +1,12 @@
+#!/bin/bash
+alias pscpu='ps -aux | sort -k3nr | head -10'
+alias psmem='ps -aux | sort -k4nr | head -10'
+alias ls='ls -lFh --color=auto'
+alias ll='ls -alFh --color=auto'
+alias lsp='lss | grep'
+alias llp='ll | grep'
+alias psp='ps -ef | grep'
+alias duone='du --max-depth=1 -BM'
+alias bd='source bd'
+alias stl='sudo systemctl'
+alias ssp='sudo ss -tnlp | grep'
