@@ -62,8 +62,8 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 
-if [ -f ~/.bash_style ]; then
-	. ~/.bash_style
+if [ -f ~/.PS1 ]; then
+	. ~/.PS1
 fi
 unset color_prompt force_color_prompt
 
