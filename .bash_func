@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source ~/bashfunc/memclean.sh
+source ~/bashfunc/bd.sh
+source ~/bashfunc/cd_hist.sh
