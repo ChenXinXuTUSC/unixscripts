@@ -31,3 +31,5 @@ do
 	fi
 done
 
+mkdir ${DST_PATH}/log
+source ${DST_PATH}/.bashrc
