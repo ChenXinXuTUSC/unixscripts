@@ -2,6 +2,10 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+if [ -f ~/.bash_export ]; then
+	. ~/.bash_export
+fi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -107,10 +111,6 @@ fi
 
 if [ -f ~/.bash_func ]; then
 	. ~/.bash_func
-fi
-
-if [ -f ~/.bash_export ]; then
-	. ~/.bash_export
 fi
 
 # enable programmable completion features (you don't need to enable
