@@ -29,20 +29,14 @@ inoremap < <><ESC>i
 inoremap <> <>
 inoremap << <<
 
-" enable vscode theme
-set background=dark
-try
-	"set t_Co=256
-	"set t_ut=
-	colorscheme codedark
-catch
-	try
-		colorscheme desert
-	catch
-		colorscheme default
-	endtry
-endtry
+" leader short cut
+let mapleader=" "
+map <leader>wq :wq<CR>
+map <leader>wc :close<CR>
+map <leader>wt :terminal<CR>
 
 " enable status line
-source /home/fredom/.vim/statusbar.vim
+source ~/.vim/statusbar.vim
+source ~/.vim/loadplugins.vim
+source ~/.vim/confplugins.vim
 
