@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+HOME=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
+
 if [ -f ~/.bash_export ]; then
 	. ~/.bash_export
 fi
