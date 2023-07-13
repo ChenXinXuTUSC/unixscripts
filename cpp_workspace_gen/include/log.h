@@ -53,10 +53,10 @@ enum class LOG_LVL
     FATL = 0,
 };
 
-template<typename... Type>
-void print_varlen_msgs(std::string file, int line, LOG_LVL level, Type... msgs);
-template<typename... Type>
-void print_varlen_msgs(std::string file, int line, LOG_LVL level, Type... msgs) {
+template<typename... varlen_type>
+void print_varlen_msgs(std::string file, int line, LOG_LVL level, varlen_type... msgs);
+template<typename... varlen_type>
+inline void print_varlen_msgs(std::string file, int line, LOG_LVL level, varlen_type... msgs) {
     std::string prefix = "[NONE]";
     switch (level)
     {
@@ -87,8 +87,8 @@ void print_varlen_msgs(std::string file, int line, LOG_LVL level, Type... msgs) 
     ((std::cout << msgs << ' '), ...) << std::endl;
     std::cout << "    " << file << ' ' << line << std::endl;
 }
-template<> // in case that LOG doesn't receive any strings.
-void print_varlen_msgs(std::string file, int line, LOG_LVL level)
+// in case that LOG doesn't receive any strings.
+inline void print_varlen_msgs(std::string file, int line, LOG_LVL level)
 {
     print_varlen_msgs(file, line, level, "");
 }
