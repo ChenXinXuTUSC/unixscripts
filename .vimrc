@@ -3,6 +3,7 @@ let mapleader=" "
 map <leader>wq :wq<CR>
 map <leader>wc :close<CR>
 map <leader>wt :terminal<CR>
+map <leader>q :q!<CR>
 
 " enable status line
 source ~/.vim/statusbar.vim
