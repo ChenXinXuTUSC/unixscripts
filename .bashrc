@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -100,7 +102,7 @@ fi
 # some more ls aliases
 # alias ll='ls -l'
 # alias la='ls -A'
-# alias l='ls -CF'
+alias l='ls -CF'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
