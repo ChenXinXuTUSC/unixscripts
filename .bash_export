@@ -1,0 +1,3 @@
+#!/bin/bash
+
+export PATH=${PATH}:$(find ~/.local/bin -type d | tr '\n' ':')

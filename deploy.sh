@@ -16,7 +16,7 @@ if  [ ! -d ${DST_PATH} ] ;then
 fi
 
 
-list=".bashrc .bash_aliases .bash_func .PS1 bashfunc scripts .vimrc .vim"
+list=".bashrc .bash_aliases .bash_func .bash_export .PS1 bashfunc scripts .vimrc .vim"
 for item in ${list}
 do
 	if [ -e ${DST_PATH}/${item} ]; then
