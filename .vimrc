@@ -29,6 +29,7 @@ set mouse=a
 set cursorline
 set showtabline=1
 set foldmethod=indent
+autocmd! BufNewFile,BufRead *, setlocal nofoldenable
 syntax on
 
 inoremap ' ''<ESC>i
