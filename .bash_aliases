@@ -12,7 +12,12 @@ alias stl='sudo systemctl'
 alias ssp='sudo ss -tnlp | grep'
 
 
-if command -v fzf >/dev/null; then
+if command -v fzf > /dev/null; then
 	alias cdf='cd $(find * -type d | fzf)'
 	alias vif='vim $(fzf)'
+fi
+
+if command -v clash > /dev/null; then
+	alias clashon='source clashon.sh'
+	alias clashoff='source clashoff.sh'
 fi
