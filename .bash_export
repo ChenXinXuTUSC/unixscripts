@@ -1,3 +1,4 @@
 #!/bin/bash
 
-export PATH=${PATH}:$(find ~/.local/bin -type d | tr '\n' ':')
+export PATH=${PATH}:$(find ~/.local/bin -type l | tr '\n' ':')
+export PATH=${PATH}:~/scripts
