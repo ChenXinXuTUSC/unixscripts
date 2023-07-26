@@ -3,7 +3,10 @@ let mapleader=" "
 map <leader>wq :wq<CR>
 map <leader>wc :close<CR>
 map <leader>wt :terminal<CR>
+map <leader>w :w!<CR>
 map <leader>q :q!<CR>
+map <leader>sp :sp<CR>
+map <leader>vsp :vsp<CR>
 
 " enable status line
 source ~/.vim/statusbar.vim
@@ -24,6 +27,8 @@ set ignorecase
 set ruler
 set mouse=a
 set cursorline
+set showtabline=1
+set foldmethod=indent
 syntax on
 
 inoremap ' ''<ESC>i
