@@ -22,11 +22,11 @@ fi
 mkdir -p ${DST_PATH}/app
 mkdir -p ${DST_PATH}/src
 mkdir -p ${DST_PATH}/bin
-mkdir -p ${DST_PATH}/lib/Debug/SHARED
-mkdir -p ${DST_PATH}/lib/Debug/STATIC
-mkdir -p ${DST_PATH}/lib/Release/SHARED
-mkdir -p ${DST_PATH}/lib/Release/STATIC
-cp -r ${DST_PATH}/lib ${DST_PATH}/src/runtimelib
+mkdir -p ${DST_PATH}/lib/generate/Debug/SHARED
+mkdir -p ${DST_PATH}/lib/generate/Debug/STATIC
+mkdir -p ${DST_PATH}/lib/generate/Release/SHARED
+mkdir -p ${DST_PATH}/lib/generate/Release/STATIC
+cp -r ${DST_PATH}/lib/generate ${DST_PATH}/lib/imported
 mkdir -p ${DST_PATH}/include
 mkdir -p ${DST_PATH}/build
 mkdir -p ${DST_PATH}/cmake
