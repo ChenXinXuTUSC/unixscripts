@@ -35,6 +35,7 @@ mkdir -p ${DST_PATH}/.vscode
 touch ${DST_PATH}/README.md
 
 cp ${SCRIPT_PATH}/CMakeLists.txt ${DST_PATH}/CMakeLists.txt
+cp ${SCRIPT_PATH}/.clang-tidy ${DST_PATH}/.clang-tidy
 cp -r ${SCRIPT_PATH}/app/ ${DST_PATH}/
 cp -r ${SCRIPT_PATH}/src/ ${DST_PATH}/
 cp -r ${SCRIPT_PATH}/include/ ${DST_PATH}/
