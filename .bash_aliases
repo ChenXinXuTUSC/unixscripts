@@ -10,7 +10,7 @@ alias pp='ps -aux | grep -v grep | grep'
 alias duone='du --max-depth=1 -BM'
 alias stl='sudo systemctl'
 alias ssp='sudo ss -tnlp | grep'
-
+alias rebashrc='cd && source .bashrc && cd -'
 
 if command -v fzf > /dev/null; then
 	alias cdf='cd $(find * -type d | fzf)'
