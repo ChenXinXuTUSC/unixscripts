@@ -2,6 +2,7 @@
 
 SCRIPT_PATH=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 echo "\${SCRIPT_PATH}=${SCRIPT_PATH}"
+echo ""
 
 read -p "specify a path :" DST_PATH
 if  [ ! -n "${DST_PATH}" ] ;then
