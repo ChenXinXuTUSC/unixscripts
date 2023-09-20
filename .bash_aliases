@@ -21,3 +21,7 @@ if command -v clash > /dev/null; then
 	alias clashon='source clashon.sh'
 	alias clashoff='source clashoff.sh'
 fi
+
+if command -v nvidia-smi > /dev/null; then
+    alias nsi='nvidia-smi'
+fi
