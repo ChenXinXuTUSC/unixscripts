@@ -19,7 +19,9 @@ colorscheme codedark
 
 ""source ~/.vim/confplugins.vim
 set nu
-set ts=4
+set expandtab
+set tabstop=4
+set shiftwidth=4
 set autoindent
 set hlsearch
 set incsearch
