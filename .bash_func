@@ -1,5 +1,16 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-source ~/bashfunc/memclean.sh
-source ~/bashfunc/bd.sh
-source ~/bashfunc/cd_hist.sh
+
+#scan_path=$(pwd)
+#
+#if [ ${#} -ne 1 ]; then
+#    echo "not providing the path, using current directory: $(pwd)"
+#fi
+
+#source ~/.bash_func.d/common.sh
+
+recursivedo sourcesh ~/.bash_func.d
+
+#source ~/.bash_func.d/memclean.sh
+#source ~/.bash_func.d/bd.sh
+#source ~/.bash_func.d/cd_hist.sh

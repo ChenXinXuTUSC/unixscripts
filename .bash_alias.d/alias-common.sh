@@ -11,18 +11,4 @@ alias duone='du --max-depth=1 -BM'
 alias sss='sudo ss -tnlp'
 alias stl='sudo systemctl'
 alias ssp='sudo ss -tnlp | grep'
-alias rebashrc='cd && source .bashrc && cd -'
-
-if command -v fzf > /dev/null; then
-	alias cdf='cd $(find * -type d | fzf)'
-	alias vif='vim $(fzf)'
-fi
-
-if command -v clash > /dev/null; then
-	alias clashon='source clashon.sh'
-	alias clashoff='source clashoff.sh'
-fi
-
-if command -v nvidia-smi > /dev/null; then
-    alias nsi='nvidia-smi'
-fi
+alias rebashrc='source ~/.bashrc'

@@ -17,7 +17,7 @@ if  [ ! -d ${DST_PATH} ] ;then
 fi
 
 
-list=".bashrc .bash_aliases .bash_func .bash_export .PS1 bashfunc scripts .vimrc .vim"
+list=".bashrc .bash_func .bash_func.d .bash_alias .bash_alias.d  .bash_export .bash_export.d .PS1 scripts .vimrc .vim"
 for item in ${list}
 do
 	if [ -e ${DST_PATH}/${item} ]; then
@@ -33,4 +33,14 @@ do
 done
 
 mkdir ${DST_PATH}/log
-source ${DST_PATH}/.bashrc
+mkdir ${DST_PATH}/bin
+mkdir ${DST_PATH}/programfiles
+
+# prepare an uninstall script
+touch ${DST_PATH}/bashrcbak.sh
+echo "#!/usr/bin/env bash" > ${DST_PATH}/bashrcbak.sh
+echo "list=\"${list}\"" >> ${DST_PATH}/bashrcbak.sh
+cat ${SCRIPT_PATH}/bashrcbak.in >> ${DST_PATH}/bashrcbak.sh
+
+cd ${DST_PATH} && source ${DST_PATH}/.bashrc
+
