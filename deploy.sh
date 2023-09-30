@@ -5,14 +5,14 @@ echo "\${SCRIPT_PATH}=${SCRIPT_PATH}"
 echo ""
 
 read -p "specify a path :" DST_PATH
-if  [ ! -n "${DST_PATH}" ] ;then
+if  [ ! -n "${DST_PATH}" ]; then
     echo "didn't choose the path, will create in current working dir..."
     path=$(pwd)
 else
     echo "template will be generated in ${DST_PATH}"
 fi
 
-if  [ ! -d ${DST_PATH} ] ;then
+if  [ ! -d ${DST_PATH} ]; then
     mkdir -p ${DST_PATH}
 fi
 
