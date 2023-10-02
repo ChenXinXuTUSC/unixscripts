@@ -9,7 +9,7 @@ function parse_git_branch()
 
 function have_changes()
 {
-	[ -n "$(git status 2> /dev/null | grep 'Changes\|变更')" ] && echo "[x]"
+	[ -n "$(git status 2> /dev/null | grep 'Changes\|变更\|Untracked')" ] && echo "[x]"
 }
 
 # some bash font control sequence
