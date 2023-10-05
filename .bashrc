@@ -130,5 +130,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# other sources
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
