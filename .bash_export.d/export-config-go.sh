@@ -8,7 +8,7 @@ if command -v go > /dev/null; then
     # Set environment variable allow bypassing the proxy for selected modules
     go env -w GOPRIVATE=*.corp.example.com
     go env -w GO111MODULE=on
-    
-    
+     
     go env -w GOPATH=${gohome}/gohome
+    export PATH=${PATH}:${gohome}/gohome/bin
 fi
