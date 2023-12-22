@@ -2,7 +2,7 @@
 
 memclean()
 {
-	free -m
+	free -h
 	sudo sh -c 'echo 1 > /proc/sys/vm/drop_caches'
-	free -m
+	free -h
 }
