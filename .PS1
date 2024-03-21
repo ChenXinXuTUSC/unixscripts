@@ -84,8 +84,8 @@ function fx_clr()
 }
 
 if [ "$color_prompt" = yes ]; then
-	PS1='┌[${debian_chroot:+($debian_chroot)}\e[01;32m\u@\h \t\e[00m] \e[07m\e[01m\e[34m\w\e[00m\e[01;32m$(parse_git_branch)\e[05m\e[01;33m$(have_changes)\e[00m\n└> '
+	PS1='┌[${debian_chroot:+($debian_chroot)}\e[01;32m\u@\h \t\e[00m] \e[01m\e[44m\w\e[00m\e[01;32m$(parse_git_branch)\e[05m\e[01;33m$(have_changes)\e[00m\n└> '
 else
-    PS1='┌[${debian_chroot:+($debian_chroot)}\u@\h \t] \w$(parse_git_branch)$(have_changes)\n└\$ '
+    PS1='┌[${debian_chroot:+($debian_chroot)}\u@\h \t] \w$(parse_git_branch)$(have_changes)\n└> '
 fi
 
