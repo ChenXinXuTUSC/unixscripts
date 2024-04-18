@@ -11,6 +11,7 @@ alias duone='du --max-depth=1 -BM'
 alias sss='sudo ss -tnlp'
 alias stl='sudo systemctl'
 alias ssp='sudo ss -tnlp | grep'
+alias fh='free -h'
 
 alias grepkill='source ~/scripts/grepkill.sh'
 
