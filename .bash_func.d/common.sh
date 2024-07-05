@@ -9,6 +9,6 @@ function sourcesh()
     file=${1}
     if [[ ${file} == *.sh ]] && [ -f ${file} ]; then
         source ${file}
-        echo "sourced ${file}"
+        # echo "sourced ${file}"
     fi
 }
