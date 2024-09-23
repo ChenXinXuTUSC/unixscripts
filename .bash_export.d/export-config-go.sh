@@ -10,5 +10,5 @@ if command -v go > /dev/null; then
     go env -w GO111MODULE=on
      
     go env -w GOPATH=${gohome}/gohome
-    export PATH=${PATH}:${gohome}/gohome/bin
+    export PATH=${gohome}/gohome/bin:${PATH}
 fi

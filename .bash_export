@@ -2,8 +2,8 @@
 
 #source ~/.bash_func.d/common.sh
 
-export PATH=${PATH}:$(find ~/bin -type l | tr '\n' ':')
-export PATH=${PATH}:~/scripts
+export PATH=$(find ~/bin -type l | tr '\n' ':'):${PATH}
+export PATH=~/scripts:${PATH}
 
 recursivedo sourcesh ~/.bash_export.d
 
