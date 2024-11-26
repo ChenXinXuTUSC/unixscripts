@@ -1,5 +1,5 @@
 #!/bin/sh
 
-free -m
+free -h
 sh -c 'echo 1 > /proc/sys/vm/drop_caches'
-free -m
+free -h
