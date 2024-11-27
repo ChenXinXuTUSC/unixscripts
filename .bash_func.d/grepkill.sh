@@ -27,4 +27,3 @@ function grepkill () {
     kill $target_proc_id
     return 0
 }
-grepkill
