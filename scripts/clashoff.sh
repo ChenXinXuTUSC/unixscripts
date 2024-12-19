@@ -3,6 +3,8 @@ if [ -n "${clash_procid}" ]; then
 	echo "${clash_procid}" | xargs kill -SIGKILL
 	unset HTTP_PROXY
 	unset HTTPS_PROXY
+    unset http_proxy
+    unset https_proxy
 	unset FTP_PROXY
 	unset ALL_PROXY
 else

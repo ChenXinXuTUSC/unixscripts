@@ -23,9 +23,7 @@ else
 fi
 
 nohup ${clash_home}/clash -d ${confdir} > ${clash_home}/clash.log 2>&1 &
-# ${clash_home}/clash -d ${confdir}
 
-
-export HTTP_PROXY=http://127.0.0.1:7890
-export HTTPS_PROXY=http://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
 
