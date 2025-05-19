@@ -17,10 +17,11 @@ set t_Co=256
 set t_ut=
 colorscheme codedark
 
-""source ~/.vim/confplugins.vim
+"source ~/.vim/confplugins.vim
 set nu
-set expandtab
+"set expandtab
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set autoindent
 set hlsearch
